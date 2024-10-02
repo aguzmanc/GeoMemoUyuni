@@ -759,6 +759,103 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 257
   m_AllowAutoConnect: 1
+--- !u!1 &111926662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 111926666}
+  - component: {fileID: 111926665}
+  - component: {fileID: 111926664}
+  - component: {fileID: 111926663}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &111926663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111926662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &111926664
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111926662}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &111926665
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111926662}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &111926666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111926662}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 373, y: 45.84, z: 4146}
+  m_LocalScale: {x: 100, y: 16.73, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &113321716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4272,7 +4369,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -4473,7 +4570,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -4710,7 +4807,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -4911,7 +5008,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -5136,7 +5233,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 501.71664
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -5347,7 +5444,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 501.71664
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -6220,7 +6317,7 @@ MonoBehaviour:
   m_spawnRuleStampsToggleAllState: 1
   m_drawPreview: 0
   m_previewRuleIds: 
-  m_maxWorldHeight: 478.93796
+  m_maxWorldHeight: 208.81667
   m_minWorldHeight: 0
   m_showSeaLevelinStampPreview: 1
   m_rulePanelUnfolded: 1
@@ -6544,25 +6641,25 @@ MonoBehaviour:
   m_showSeaLevelPlane: 1
   m_showRulers: 0
   m_syncHeightmaps: 1
-  m_stampDirty: 0
+  m_stampDirty: 1
   m_worldMapStampToken: {fileID: 0}
   m_recordUndo: 1
-  m_currentStamperUndoOperation: 3
+  m_currentStamperUndoOperation: 2
   m_stamperUndoOperations: []
   m_linkedBiomeController: {fileID: 182510390}
-  m_cachedMaskTexture: {fileID: 1817026747}
+  m_cachedMaskTexture: {fileID: 449282092}
   m_drawPreview: 1
   m_showSeaLevelinStampPreview: 1
-  m_maxCurrentTerrainHeight: 501.71664
+  m_maxCurrentTerrainHeight: 176.66286
   m_minCurrentTerrainHeight: 0
   m_activacteLocationSliders: 1
   m_activatePreviewRequested: 0
-  m_activatePreviewTimeStamp: 1727387090550
+  m_activatePreviewTimeStamp: 1727906761211
   m_heightUpdateRequested: 0
   m_autoSpawnRequested: 0
   m_autoMaskExportRequested: 0
   m_autoSpawnStarted: 1
-  m_lastHeightmapUpdateTimeStamp: 1727387088409
+  m_lastHeightmapUpdateTimeStamp: 1727906760528
   m_openedFromTerrainGenerator: 0
   m_hasStamped: 1
   m_showAutoSpawnersOnEnable: 0
@@ -6581,6 +6678,44 @@ MonoBehaviour:
   m_impostorLoadingRange: 0
   m_highlightLoadingSettings: 0
   m_highlightLoadingSettingsStartedTimeStamp: 0
+--- !u!84 &449282092
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 3585
+  m_Height: 3585
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 0
+  m_ColorFormat: 49
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &524163885
 GameObject:
   m_ObjectHideFlags: 0
@@ -6779,7 +6914,7 @@ MonoBehaviour:
   m_spawnRuleStampsToggleAllState: 1
   m_drawPreview: 0
   m_previewRuleIds: 
-  m_maxWorldHeight: 478.93796
+  m_maxWorldHeight: 176.66286
   m_minWorldHeight: 0
   m_showSeaLevelinStampPreview: 1
   m_rulePanelUnfolded: 1
@@ -7312,7 +7447,7 @@ MonoBehaviour:
   m_spawnRuleStampsToggleAllState: 1
   m_drawPreview: 0
   m_previewRuleIds: 
-  m_maxWorldHeight: 501.71664
+  m_maxWorldHeight: 176.66286
   m_minWorldHeight: 0
   m_showSeaLevelinStampPreview: 1
   m_rulePanelUnfolded: 1
@@ -7825,7 +7960,7 @@ MonoBehaviour:
   m_spawnRuleStampsToggleAllState: 1
   m_drawPreview: 0
   m_previewRuleIds: 
-  m_maxWorldHeight: 501.71664
+  m_maxWorldHeight: 176.66286
   m_minWorldHeight: 0
   m_showSeaLevelinStampPreview: 1
   m_rulePanelUnfolded: 1
@@ -8099,7 +8234,7 @@ MonoBehaviour:
   m_spawnRuleStampsToggleAllState: 1
   m_drawPreview: 0
   m_previewRuleIds: 
-  m_maxWorldHeight: 501.71664
+  m_maxWorldHeight: 176.66286
   m_minWorldHeight: 0
   m_showSeaLevelinStampPreview: 1
   m_rulePanelUnfolded: 1
@@ -8912,7 +9047,7 @@ MonoBehaviour:
   m_isWorldmapSpawner: 0
   m_spawnRange: 1024
   m_generateRandomSeed: 1
-  m_randomSeed: 816684372
+  m_randomSeed: 313222333
   m_spawnDensity: 0.6
   m_resourcesPath: 
   m_spawnerRules:
@@ -8987,7 +9122,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 208.81667
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -9170,7 +9305,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 208.81667
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -9371,7 +9506,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 208.81667
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -9599,7 +9734,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 208.81667
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -9827,7 +9962,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 208.81667
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -11155,7 +11290,7 @@ MonoBehaviour:
   m_absoluteHeightValue: 0
   m_rotation: 0
   m_isWorldmapStamper: 0
-  m_operation: 0
+  m_operation: 3
   m_baseLevel: 0
   m_drawStampBase: 1
   m_adaptiveBase: 0
@@ -11179,7 +11314,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 501.71664
+    m_maxWorldHeight: 34.204624
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -11243,17 +11378,17 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: 10
-        outSlope: 10
+        inSlope: 4
+        outSlope: 4
         tangentMode: 34
         weightedMode: 0
         inWeight: 0
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 10
-        inSlope: 10
-        outSlope: 10
+        value: 4
+        inSlope: 4
+        outSlope: 4
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -20704,7 +20839,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -20905,7 +21040,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -21142,7 +21277,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -21343,7 +21478,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -21568,7 +21703,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 501.71664
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -21779,7 +21914,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 501.71664
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -22270,7 +22405,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -22498,7 +22633,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -22681,7 +22816,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -22918,7 +23053,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -23101,7 +23236,7 @@ MonoBehaviour:
       m_imageMaskLocation: 0
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -23326,7 +23461,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 501.71664
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -23509,7 +23644,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 501.71664
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -23994,7 +24129,7 @@ MonoBehaviour:
   m_spawnRuleStampsToggleAllState: 1
   m_drawPreview: 0
   m_previewRuleIds: 
-  m_maxWorldHeight: 501.71664
+  m_maxWorldHeight: 176.66286
   m_minWorldHeight: 0
   m_showSeaLevelinStampPreview: 1
   m_rulePanelUnfolded: 1
@@ -24481,7 +24616,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -24664,7 +24799,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -24889,7 +25024,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 501.71664
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -25072,7 +25207,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 501.71664
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -25273,7 +25408,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 501.71664
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -25576,7 +25711,7 @@ MonoBehaviour:
   m_spawnRuleStampsToggleAllState: 1
   m_drawPreview: 0
   m_previewRuleIds: 
-  m_maxWorldHeight: 501.71664
+  m_maxWorldHeight: 176.66286
   m_minWorldHeight: 0
   m_showSeaLevelinStampPreview: 1
   m_rulePanelUnfolded: 1
@@ -26162,7 +26297,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -26345,7 +26480,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 501.71664
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -26570,7 +26705,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 501.71664
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -26753,7 +26888,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 501.71664
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -26954,7 +27089,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 501.71664
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -27605,44 +27740,6 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 257
   m_AllowAutoConnect: 1
---- !u!84 &1817026747
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 5
-  m_Width: 3585
-  m_Height: 3585
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 0
-  m_ColorFormat: 49
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!114 &1821283597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39169,7 +39266,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -39370,7 +39467,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -39607,7 +39704,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -39808,7 +39905,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -40045,7 +40142,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -40246,7 +40343,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -40483,7 +40580,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -40684,7 +40781,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -40921,7 +41018,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -41122,7 +41219,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -41359,7 +41456,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -41560,7 +41657,7 @@ MonoBehaviour:
       m_imageMaskLocation: 1
       m_strength: 1
       m_seaLevel: 0
-      m_maxWorldHeight: 478.93796
+      m_maxWorldHeight: 176.66286
       m_minWorldHeight: 0
       m_xOffSet: 0
       m_zOffSet: 0
@@ -41785,7 +41882,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 478.93796
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
@@ -41996,7 +42093,7 @@ MonoBehaviour:
     m_imageMaskLocation: 0
     m_strength: 1
     m_seaLevel: 0
-    m_maxWorldHeight: 478.93796
+    m_maxWorldHeight: 176.66286
     m_minWorldHeight: 0
     m_xOffSet: 0
     m_zOffSet: 0
