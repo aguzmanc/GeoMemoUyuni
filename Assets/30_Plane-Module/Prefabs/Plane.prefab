@@ -448,10 +448,11 @@ MonoBehaviour:
   _accelerationSpeed: 30
   _decelerationSpeed: 20
   _maxSpeed: 100
-  _minSpeed: 0
+  _minSpeed: 30
   _rollSpeed: 50
   _pitchSpeed: 50
   _yawSpeed: 30
+  _rotationSmoothFactor: 2
 --- !u!1 &9141945842075572902
 GameObject:
   m_ObjectHideFlags: 0

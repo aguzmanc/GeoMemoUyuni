@@ -8,14 +8,20 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] float _followSpeed = 5f;
     [SerializeField] float _rotationSpeed = 3f;
 
-    void LateUpdate ()
+    void Update ()
     {
+        // Movimiento suavizado
         var desiredPosition = _target.position + _offset;
-        var smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, _followSpeed * Time.deltaTime);
+        var smoothedPosition = Vector3.Lerp(transform.position, _target.position, _followSpeed * Time.deltaTime);
         transform.position = smoothedPosition;
 
-        var desiredRotation = Quaternion.LookRotation(_target.position - transform.position);
+        // Rotación suavizada
+        //var direction = _target.position - transform.position;
+        //direction.y = 0;  // Ignorar la rotación en Z (alabeo), mantenemos la cámara nivelada
+        //var desiredRotation = Quaternion.LookRotation(direction);
+        var desiredRotation = Quaternion.Euler(_target.eulerAngles.x, _target.eulerAngles.y, 0);
         var smoothedRotation = Quaternion.Slerp(transform.rotation, desiredRotation, _rotationSpeed * Time.deltaTime);
+
         transform.rotation = smoothedRotation;
     }
 }
