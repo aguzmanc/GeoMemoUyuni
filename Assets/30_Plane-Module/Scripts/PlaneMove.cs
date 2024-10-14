@@ -9,21 +9,17 @@ public class PlaneMove : MonoBehaviour
     [SerializeField] float _rollSpeed = 50f;
     [SerializeField] float _pitchSpeed = 50f;
     [SerializeField] float _yawSpeed = 30f;
-    [SerializeField] float _rotationSmoothFactor = 2f; // Factor de suavizado
+    [SerializeField] float _rotationSmoothFactor = 2f;
 
     float _currentSpeed = 30f;
-    float _targetPitch = 0f;
-    float _targetYaw = 0f;
-    float _targetRoll = 0f;
 
     void Update ()
     {
-        // Control de velocidad
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.Z))
         {
             _currentSpeed += _accelerationSpeed * Time.deltaTime;
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.X))
         {
             _currentSpeed -= _decelerationSpeed * Time.deltaTime;
         }
@@ -31,37 +27,43 @@ public class PlaneMove : MonoBehaviour
         _currentSpeed = Mathf.Clamp(_currentSpeed, _minSpeed, _maxSpeed);
         transform.position += transform.forward * _currentSpeed * Time.deltaTime;
 
-        // Control del tangaje (pitch) con el ratón
-        var pitchInput = -Input.GetAxis("Mouse Y");
-        _targetPitch += pitchInput * _pitchSpeed * Time.deltaTime;
+        float pitch = 0f;
+        float yaw = 0f;
+        float roll = 0f;
 
-        // Control de la guiñada (yaw) con el teclado (Q y E)
-        var rollInput = Input.GetAxis("Mouse X");
-        if (Input.GetKey(KeyCode.Q) || rollInput < -0.1f)
+        if (Input.GetKey(KeyCode.W))
         {
-            _targetYaw -= _yawSpeed * Time.deltaTime;
+            pitch = (_pitchSpeed / 2) * Time.deltaTime;
         }
-        else if (Input.GetKey(KeyCode.E) || rollInput > 0.1f)
+        else if (Input.GetKey(KeyCode.S))
         {
-            _targetYaw += _yawSpeed * Time.deltaTime;
+            pitch = -_pitchSpeed * Time.deltaTime;
         }
 
-        // Control del alabeo (roll) con el teclado (A y D) o el ratón
+        if (Input.GetKey(KeyCode.Q))
+        {
+            yaw = -_yawSpeed * Time.deltaTime;
+        }
+        else if (Input.GetKey(KeyCode.E))
+        {
+            yaw = _yawSpeed * Time.deltaTime;
+        }
+
         if (Input.GetKey(KeyCode.A))
         {
-            _targetRoll += _rollSpeed * Time.deltaTime;
+            roll = _rollSpeed * Time.deltaTime;
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            _targetRoll -= _rollSpeed * Time.deltaTime;
+            roll = -_rollSpeed * Time.deltaTime;
         }
 
-        // Suavizado de las rotaciones
-        float smoothPitch = Mathf.LerpAngle(transform.eulerAngles.x, _targetPitch, _rotationSmoothFactor * Time.deltaTime);
-        float smoothYaw = Mathf.LerpAngle(transform.eulerAngles.y, _targetYaw, _rotationSmoothFactor * Time.deltaTime);
-        float smoothRoll = Mathf.LerpAngle(transform.eulerAngles.z, _targetRoll, _rotationSmoothFactor * Time.deltaTime);
+        Quaternion targetRotation = transform.rotation *
+            Quaternion.Euler(pitch, yaw, roll);
 
-        // Aplicar la rotación suavizada
-        transform.rotation = Quaternion.Euler(smoothPitch, smoothYaw, smoothRoll);
+        transform.rotation = Quaternion.Slerp(
+            transform.rotation,
+            targetRotation,
+            _rotationSmoothFactor * Time.deltaTime);
     }
 }
