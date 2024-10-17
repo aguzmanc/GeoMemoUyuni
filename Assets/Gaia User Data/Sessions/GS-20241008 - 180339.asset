@@ -1,0 +1,1205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e251860fcd970734c9f14ebd98a146c3, type: 3}
+  m_Name: GS-20241008 - 180339
+  m_EditorClassIdentifier: 
+  m_name: Session 20241008-180339
+  m_description: 'Rocking out at Creativity Central!
+
+
+    If you like Gaia please
+    consider rating it :)'
+  m_previewImage: {fileID: 0}
+  m_dateCreated: 10/8/2024 6:03:39 PM
+  m_terrainWidth: 2048
+  m_terrainDepth: 2400
+  m_terrainHeight: 2048
+  m_seaLevel: 0
+  m_spawnDensity: 0.6
+  m_isLocked: 0
+  m_previewImageBytes: 
+  m_previewImageWidth: 0
+  m_previewImageHeight: 0
+  m_operations:
+  - m_description: 'Creating World: 10 x 10 tiles, tile size: 2048'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 10/8/2024 6:03:40 PM
+    scriptableObjectAssetGUID: 32fab537fa2c0e4428f8fb74ce21fd7f
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - No Masks
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20241008 - 180339
+    - Terrain_0_1-20241008 - 180339
+    - Terrain_0_2-20241008 - 180339
+    - Terrain_0_3-20241008 - 180339
+    - Terrain_0_4-20241008 - 180339
+    - Terrain_0_5-20241008 - 180339
+    - Terrain_0_6-20241008 - 180339
+    - Terrain_0_7-20241008 - 180339
+    - Terrain_0_8-20241008 - 180339
+    - Terrain_0_9-20241008 - 180339
+    - Terrain_1_0-20241008 - 180339
+    - Terrain_1_1-20241008 - 180339
+    - Terrain_1_2-20241008 - 180339
+    - Terrain_1_3-20241008 - 180339
+    - Terrain_1_4-20241008 - 180339
+    - Terrain_1_5-20241008 - 180339
+    - Terrain_1_6-20241008 - 180339
+    - Terrain_1_7-20241008 - 180339
+    - Terrain_1_8-20241008 - 180339
+    - Terrain_1_9-20241008 - 180339
+    - Terrain_2_0-20241008 - 180339
+    - Terrain_2_1-20241008 - 180339
+    - Terrain_2_2-20241008 - 180339
+    - Terrain_2_3-20241008 - 180339
+    - Terrain_2_4-20241008 - 180339
+    - Terrain_2_5-20241008 - 180339
+    - Terrain_2_6-20241008 - 180339
+    - Terrain_2_7-20241008 - 180339
+    - Terrain_2_8-20241008 - 180339
+    - Terrain_2_9-20241008 - 180339
+    - Terrain_3_0-20241008 - 180339
+    - Terrain_3_1-20241008 - 180339
+    - Terrain_3_2-20241008 - 180339
+    - Terrain_3_3-20241008 - 180339
+    - Terrain_3_4-20241008 - 180339
+    - Terrain_3_5-20241008 - 180339
+    - Terrain_3_6-20241008 - 180339
+    - Terrain_3_7-20241008 - 180339
+    - Terrain_3_8-20241008 - 180339
+    - Terrain_3_9-20241008 - 180339
+    - Terrain_4_0-20241008 - 180339
+    - Terrain_4_1-20241008 - 180339
+    - Terrain_4_2-20241008 - 180339
+    - Terrain_4_3-20241008 - 180339
+    - Terrain_4_4-20241008 - 180339
+    - Terrain_4_5-20241008 - 180339
+    - Terrain_4_6-20241008 - 180339
+    - Terrain_4_7-20241008 - 180339
+    - Terrain_4_8-20241008 - 180339
+    - Terrain_4_9-20241008 - 180339
+    - Terrain_5_0-20241008 - 180339
+    - Terrain_5_1-20241008 - 180339
+    - Terrain_5_2-20241008 - 180339
+    - Terrain_5_3-20241008 - 180339
+    - Terrain_5_4-20241008 - 180339
+    - Terrain_5_5-20241008 - 180339
+    - Terrain_5_6-20241008 - 180339
+    - Terrain_5_7-20241008 - 180339
+    - Terrain_5_8-20241008 - 180339
+    - Terrain_5_9-20241008 - 180339
+    - Terrain_6_0-20241008 - 180339
+    - Terrain_6_1-20241008 - 180339
+    - Terrain_6_2-20241008 - 180339
+    - Terrain_6_3-20241008 - 180339
+    - Terrain_6_4-20241008 - 180339
+    - Terrain_6_5-20241008 - 180339
+    - Terrain_6_6-20241008 - 180339
+    - Terrain_6_7-20241008 - 180339
+    - Terrain_6_8-20241008 - 180339
+    - Terrain_6_9-20241008 - 180339
+    - Terrain_7_0-20241008 - 180339
+    - Terrain_7_1-20241008 - 180339
+    - Terrain_7_2-20241008 - 180339
+    - Terrain_7_3-20241008 - 180339
+    - Terrain_7_4-20241008 - 180339
+    - Terrain_7_5-20241008 - 180339
+    - Terrain_7_6-20241008 - 180339
+    - Terrain_7_7-20241008 - 180339
+    - Terrain_7_8-20241008 - 180339
+    - Terrain_7_9-20241008 - 180339
+    - Terrain_8_0-20241008 - 180339
+    - Terrain_8_1-20241008 - 180339
+    - Terrain_8_2-20241008 - 180339
+    - Terrain_8_3-20241008 - 180339
+    - Terrain_8_4-20241008 - 180339
+    - Terrain_8_5-20241008 - 180339
+    - Terrain_8_6-20241008 - 180339
+    - Terrain_8_7-20241008 - 180339
+    - Terrain_8_8-20241008 - 180339
+    - Terrain_8_9-20241008 - 180339
+    - Terrain_9_0-20241008 - 180339
+    - Terrain_9_1-20241008 - 180339
+    - Terrain_9_2-20241008 - 180339
+    - Terrain_9_3-20241008 - 180339
+    - Terrain_9_4-20241008 - 180339
+    - Terrain_9_5-20241008 - 180339
+    - Terrain_9_6-20241008 - 180339
+    - Terrain_9_7-20241008 - 180339
+    - Terrain_9_8-20241008 - 180339
+    - Terrain_9_9-20241008 - 180339
+    m_operationDateTime: 10/8/2024 6:05:07 PM
+    scriptableObjectAssetGUID: 5e3b618a7f903e04c9d248800fc465dd
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Gaia Pro Sample-Texture(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20241008 - 180339
+    - Terrain_0_1-20241008 - 180339
+    - Terrain_0_2-20241008 - 180339
+    - Terrain_0_3-20241008 - 180339
+    - Terrain_0_4-20241008 - 180339
+    - Terrain_0_5-20241008 - 180339
+    - Terrain_0_6-20241008 - 180339
+    - Terrain_0_7-20241008 - 180339
+    - Terrain_0_8-20241008 - 180339
+    - Terrain_0_9-20241008 - 180339
+    - Terrain_1_0-20241008 - 180339
+    - Terrain_1_1-20241008 - 180339
+    - Terrain_1_2-20241008 - 180339
+    - Terrain_1_3-20241008 - 180339
+    - Terrain_1_4-20241008 - 180339
+    - Terrain_1_5-20241008 - 180339
+    - Terrain_1_6-20241008 - 180339
+    - Terrain_1_7-20241008 - 180339
+    - Terrain_1_8-20241008 - 180339
+    - Terrain_1_9-20241008 - 180339
+    - Terrain_2_0-20241008 - 180339
+    - Terrain_2_1-20241008 - 180339
+    - Terrain_2_2-20241008 - 180339
+    - Terrain_2_3-20241008 - 180339
+    - Terrain_2_4-20241008 - 180339
+    - Terrain_2_5-20241008 - 180339
+    - Terrain_2_6-20241008 - 180339
+    - Terrain_2_7-20241008 - 180339
+    - Terrain_2_8-20241008 - 180339
+    - Terrain_2_9-20241008 - 180339
+    - Terrain_3_0-20241008 - 180339
+    - Terrain_3_1-20241008 - 180339
+    - Terrain_3_2-20241008 - 180339
+    - Terrain_3_3-20241008 - 180339
+    - Terrain_3_4-20241008 - 180339
+    - Terrain_3_5-20241008 - 180339
+    - Terrain_3_6-20241008 - 180339
+    - Terrain_3_7-20241008 - 180339
+    - Terrain_3_8-20241008 - 180339
+    - Terrain_3_9-20241008 - 180339
+    - Terrain_4_0-20241008 - 180339
+    - Terrain_4_1-20241008 - 180339
+    - Terrain_4_2-20241008 - 180339
+    - Terrain_4_3-20241008 - 180339
+    - Terrain_4_4-20241008 - 180339
+    - Terrain_4_5-20241008 - 180339
+    - Terrain_4_6-20241008 - 180339
+    - Terrain_4_7-20241008 - 180339
+    - Terrain_4_8-20241008 - 180339
+    - Terrain_4_9-20241008 - 180339
+    - Terrain_5_0-20241008 - 180339
+    - Terrain_5_1-20241008 - 180339
+    - Terrain_5_2-20241008 - 180339
+    - Terrain_5_3-20241008 - 180339
+    - Terrain_5_4-20241008 - 180339
+    - Terrain_5_5-20241008 - 180339
+    - Terrain_5_6-20241008 - 180339
+    - Terrain_5_7-20241008 - 180339
+    - Terrain_5_8-20241008 - 180339
+    - Terrain_5_9-20241008 - 180339
+    - Terrain_6_0-20241008 - 180339
+    - Terrain_6_1-20241008 - 180339
+    - Terrain_6_2-20241008 - 180339
+    - Terrain_6_3-20241008 - 180339
+    - Terrain_6_4-20241008 - 180339
+    - Terrain_6_5-20241008 - 180339
+    - Terrain_6_6-20241008 - 180339
+    - Terrain_6_7-20241008 - 180339
+    - Terrain_6_8-20241008 - 180339
+    - Terrain_6_9-20241008 - 180339
+    - Terrain_7_0-20241008 - 180339
+    - Terrain_7_1-20241008 - 180339
+    - Terrain_7_2-20241008 - 180339
+    - Terrain_7_3-20241008 - 180339
+    - Terrain_7_4-20241008 - 180339
+    - Terrain_7_5-20241008 - 180339
+    - Terrain_7_6-20241008 - 180339
+    - Terrain_7_7-20241008 - 180339
+    - Terrain_7_8-20241008 - 180339
+    - Terrain_7_9-20241008 - 180339
+    - Terrain_8_0-20241008 - 180339
+    - Terrain_8_1-20241008 - 180339
+    - Terrain_8_2-20241008 - 180339
+    - Terrain_8_3-20241008 - 180339
+    - Terrain_8_4-20241008 - 180339
+    - Terrain_8_5-20241008 - 180339
+    - Terrain_8_6-20241008 - 180339
+    - Terrain_8_7-20241008 - 180339
+    - Terrain_8_8-20241008 - 180339
+    - Terrain_8_9-20241008 - 180339
+    - Terrain_9_0-20241008 - 180339
+    - Terrain_9_1-20241008 - 180339
+    - Terrain_9_2-20241008 - 180339
+    - Terrain_9_3-20241008 - 180339
+    - Terrain_9_4-20241008 - 180339
+    - Terrain_9_5-20241008 - 180339
+    - Terrain_9_6-20241008 - 180339
+    - Terrain_9_7-20241008 - 180339
+    - Terrain_9_8-20241008 - 180339
+    - Terrain_9_9-20241008 - 180339
+    m_operationDateTime: 10/8/2024 6:05:16 PM
+    scriptableObjectAssetGUID: 7c2faffce8f1a504bb6e238b99633b20
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - No Masks
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20241008 - 180339
+    - Terrain_0_1-20241008 - 180339
+    - Terrain_0_2-20241008 - 180339
+    - Terrain_0_3-20241008 - 180339
+    - Terrain_0_4-20241008 - 180339
+    - Terrain_0_5-20241008 - 180339
+    - Terrain_0_6-20241008 - 180339
+    - Terrain_0_7-20241008 - 180339
+    - Terrain_0_8-20241008 - 180339
+    - Terrain_0_9-20241008 - 180339
+    - Terrain_1_0-20241008 - 180339
+    - Terrain_1_1-20241008 - 180339
+    - Terrain_1_2-20241008 - 180339
+    - Terrain_1_3-20241008 - 180339
+    - Terrain_1_4-20241008 - 180339
+    - Terrain_1_5-20241008 - 180339
+    - Terrain_1_6-20241008 - 180339
+    - Terrain_1_7-20241008 - 180339
+    - Terrain_1_8-20241008 - 180339
+    - Terrain_1_9-20241008 - 180339
+    - Terrain_2_0-20241008 - 180339
+    - Terrain_2_1-20241008 - 180339
+    - Terrain_2_2-20241008 - 180339
+    - Terrain_2_3-20241008 - 180339
+    - Terrain_2_4-20241008 - 180339
+    - Terrain_2_5-20241008 - 180339
+    - Terrain_2_6-20241008 - 180339
+    - Terrain_2_7-20241008 - 180339
+    - Terrain_2_8-20241008 - 180339
+    - Terrain_2_9-20241008 - 180339
+    - Terrain_3_0-20241008 - 180339
+    - Terrain_3_1-20241008 - 180339
+    - Terrain_3_2-20241008 - 180339
+    - Terrain_3_3-20241008 - 180339
+    - Terrain_3_4-20241008 - 180339
+    - Terrain_3_5-20241008 - 180339
+    - Terrain_3_6-20241008 - 180339
+    - Terrain_3_7-20241008 - 180339
+    - Terrain_3_8-20241008 - 180339
+    - Terrain_3_9-20241008 - 180339
+    - Terrain_4_0-20241008 - 180339
+    - Terrain_4_1-20241008 - 180339
+    - Terrain_4_2-20241008 - 180339
+    - Terrain_4_3-20241008 - 180339
+    - Terrain_4_4-20241008 - 180339
+    - Terrain_4_5-20241008 - 180339
+    - Terrain_4_6-20241008 - 180339
+    - Terrain_4_7-20241008 - 180339
+    - Terrain_4_8-20241008 - 180339
+    - Terrain_4_9-20241008 - 180339
+    - Terrain_5_0-20241008 - 180339
+    - Terrain_5_1-20241008 - 180339
+    - Terrain_5_2-20241008 - 180339
+    - Terrain_5_3-20241008 - 180339
+    - Terrain_5_4-20241008 - 180339
+    - Terrain_5_5-20241008 - 180339
+    - Terrain_5_6-20241008 - 180339
+    - Terrain_5_7-20241008 - 180339
+    - Terrain_5_8-20241008 - 180339
+    - Terrain_5_9-20241008 - 180339
+    - Terrain_6_0-20241008 - 180339
+    - Terrain_6_1-20241008 - 180339
+    - Terrain_6_2-20241008 - 180339
+    - Terrain_6_3-20241008 - 180339
+    - Terrain_6_4-20241008 - 180339
+    - Terrain_6_5-20241008 - 180339
+    - Terrain_6_6-20241008 - 180339
+    - Terrain_6_7-20241008 - 180339
+    - Terrain_6_8-20241008 - 180339
+    - Terrain_6_9-20241008 - 180339
+    - Terrain_7_0-20241008 - 180339
+    - Terrain_7_1-20241008 - 180339
+    - Terrain_7_2-20241008 - 180339
+    - Terrain_7_3-20241008 - 180339
+    - Terrain_7_4-20241008 - 180339
+    - Terrain_7_5-20241008 - 180339
+    - Terrain_7_6-20241008 - 180339
+    - Terrain_7_7-20241008 - 180339
+    - Terrain_7_8-20241008 - 180339
+    - Terrain_7_9-20241008 - 180339
+    - Terrain_8_0-20241008 - 180339
+    - Terrain_8_1-20241008 - 180339
+    - Terrain_8_2-20241008 - 180339
+    - Terrain_8_3-20241008 - 180339
+    - Terrain_8_4-20241008 - 180339
+    - Terrain_8_5-20241008 - 180339
+    - Terrain_8_6-20241008 - 180339
+    - Terrain_8_7-20241008 - 180339
+    - Terrain_8_8-20241008 - 180339
+    - Terrain_8_9-20241008 - 180339
+    - Terrain_9_0-20241008 - 180339
+    - Terrain_9_1-20241008 - 180339
+    - Terrain_9_2-20241008 - 180339
+    - Terrain_9_3-20241008 - 180339
+    - Terrain_9_4-20241008 - 180339
+    - Terrain_9_5-20241008 - 180339
+    - Terrain_9_6-20241008 - 180339
+    - Terrain_9_7-20241008 - 180339
+    - Terrain_9_8-20241008 - 180339
+    - Terrain_9_9-20241008 - 180339
+    m_operationDateTime: 10/8/2024 6:06:29 PM
+    scriptableObjectAssetGUID: d902fef3b5b592d4a9b6be47f37bdd13
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Gaia Pro Sample-Texture(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20241008 - 180339
+    - Terrain_0_1-20241008 - 180339
+    - Terrain_0_2-20241008 - 180339
+    - Terrain_0_3-20241008 - 180339
+    - Terrain_0_4-20241008 - 180339
+    - Terrain_0_5-20241008 - 180339
+    - Terrain_0_6-20241008 - 180339
+    - Terrain_0_7-20241008 - 180339
+    - Terrain_0_8-20241008 - 180339
+    - Terrain_0_9-20241008 - 180339
+    - Terrain_1_0-20241008 - 180339
+    - Terrain_1_1-20241008 - 180339
+    - Terrain_1_2-20241008 - 180339
+    - Terrain_1_3-20241008 - 180339
+    - Terrain_1_4-20241008 - 180339
+    - Terrain_1_5-20241008 - 180339
+    - Terrain_1_6-20241008 - 180339
+    - Terrain_1_7-20241008 - 180339
+    - Terrain_1_8-20241008 - 180339
+    - Terrain_1_9-20241008 - 180339
+    - Terrain_2_0-20241008 - 180339
+    - Terrain_2_1-20241008 - 180339
+    - Terrain_2_2-20241008 - 180339
+    - Terrain_2_3-20241008 - 180339
+    - Terrain_2_4-20241008 - 180339
+    - Terrain_2_5-20241008 - 180339
+    - Terrain_2_6-20241008 - 180339
+    - Terrain_2_7-20241008 - 180339
+    - Terrain_2_8-20241008 - 180339
+    - Terrain_2_9-20241008 - 180339
+    - Terrain_3_0-20241008 - 180339
+    - Terrain_3_1-20241008 - 180339
+    - Terrain_3_2-20241008 - 180339
+    - Terrain_3_3-20241008 - 180339
+    - Terrain_3_4-20241008 - 180339
+    - Terrain_3_5-20241008 - 180339
+    - Terrain_3_6-20241008 - 180339
+    - Terrain_3_7-20241008 - 180339
+    - Terrain_3_8-20241008 - 180339
+    - Terrain_3_9-20241008 - 180339
+    - Terrain_4_0-20241008 - 180339
+    - Terrain_4_1-20241008 - 180339
+    - Terrain_4_2-20241008 - 180339
+    - Terrain_4_3-20241008 - 180339
+    - Terrain_4_4-20241008 - 180339
+    - Terrain_4_5-20241008 - 180339
+    - Terrain_4_6-20241008 - 180339
+    - Terrain_4_7-20241008 - 180339
+    - Terrain_4_8-20241008 - 180339
+    - Terrain_4_9-20241008 - 180339
+    - Terrain_5_0-20241008 - 180339
+    - Terrain_5_1-20241008 - 180339
+    - Terrain_5_2-20241008 - 180339
+    - Terrain_5_3-20241008 - 180339
+    - Terrain_5_4-20241008 - 180339
+    - Terrain_5_5-20241008 - 180339
+    - Terrain_5_6-20241008 - 180339
+    - Terrain_5_7-20241008 - 180339
+    - Terrain_5_8-20241008 - 180339
+    - Terrain_5_9-20241008 - 180339
+    - Terrain_6_0-20241008 - 180339
+    - Terrain_6_1-20241008 - 180339
+    - Terrain_6_2-20241008 - 180339
+    - Terrain_6_3-20241008 - 180339
+    - Terrain_6_4-20241008 - 180339
+    - Terrain_6_5-20241008 - 180339
+    - Terrain_6_6-20241008 - 180339
+    - Terrain_6_7-20241008 - 180339
+    - Terrain_6_8-20241008 - 180339
+    - Terrain_6_9-20241008 - 180339
+    - Terrain_7_0-20241008 - 180339
+    - Terrain_7_1-20241008 - 180339
+    - Terrain_7_2-20241008 - 180339
+    - Terrain_7_3-20241008 - 180339
+    - Terrain_7_4-20241008 - 180339
+    - Terrain_7_5-20241008 - 180339
+    - Terrain_7_6-20241008 - 180339
+    - Terrain_7_7-20241008 - 180339
+    - Terrain_7_8-20241008 - 180339
+    - Terrain_7_9-20241008 - 180339
+    - Terrain_8_0-20241008 - 180339
+    - Terrain_8_1-20241008 - 180339
+    - Terrain_8_2-20241008 - 180339
+    - Terrain_8_3-20241008 - 180339
+    - Terrain_8_4-20241008 - 180339
+    - Terrain_8_5-20241008 - 180339
+    - Terrain_8_6-20241008 - 180339
+    - Terrain_8_7-20241008 - 180339
+    - Terrain_8_8-20241008 - 180339
+    - Terrain_8_9-20241008 - 180339
+    - Terrain_9_0-20241008 - 180339
+    - Terrain_9_1-20241008 - 180339
+    - Terrain_9_2-20241008 - 180339
+    - Terrain_9_3-20241008 - 180339
+    - Terrain_9_4-20241008 - 180339
+    - Terrain_9_5-20241008 - 180339
+    - Terrain_9_6-20241008 - 180339
+    - Terrain_9_7-20241008 - 180339
+    - Terrain_9_8-20241008 - 180339
+    - Terrain_9_9-20241008 - 180339
+    m_operationDateTime: 10/8/2024 6:06:38 PM
+    scriptableObjectAssetGUID: 3aeaa668cacee3f42b6625a671ad82fa
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: SetHeight - No Masks
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20241008 - 180339
+    - Terrain_0_1-20241008 - 180339
+    - Terrain_0_2-20241008 - 180339
+    - Terrain_0_3-20241008 - 180339
+    - Terrain_0_4-20241008 - 180339
+    - Terrain_0_5-20241008 - 180339
+    - Terrain_0_6-20241008 - 180339
+    - Terrain_0_7-20241008 - 180339
+    - Terrain_0_8-20241008 - 180339
+    - Terrain_0_9-20241008 - 180339
+    - Terrain_1_0-20241008 - 180339
+    - Terrain_1_1-20241008 - 180339
+    - Terrain_1_2-20241008 - 180339
+    - Terrain_1_3-20241008 - 180339
+    - Terrain_1_4-20241008 - 180339
+    - Terrain_1_5-20241008 - 180339
+    - Terrain_1_6-20241008 - 180339
+    - Terrain_1_7-20241008 - 180339
+    - Terrain_1_8-20241008 - 180339
+    - Terrain_1_9-20241008 - 180339
+    - Terrain_2_0-20241008 - 180339
+    - Terrain_2_1-20241008 - 180339
+    - Terrain_2_2-20241008 - 180339
+    - Terrain_2_3-20241008 - 180339
+    - Terrain_2_4-20241008 - 180339
+    - Terrain_2_5-20241008 - 180339
+    - Terrain_2_6-20241008 - 180339
+    - Terrain_2_7-20241008 - 180339
+    - Terrain_2_8-20241008 - 180339
+    - Terrain_2_9-20241008 - 180339
+    - Terrain_3_0-20241008 - 180339
+    - Terrain_3_1-20241008 - 180339
+    - Terrain_3_2-20241008 - 180339
+    - Terrain_3_3-20241008 - 180339
+    - Terrain_3_4-20241008 - 180339
+    - Terrain_3_5-20241008 - 180339
+    - Terrain_3_6-20241008 - 180339
+    - Terrain_3_7-20241008 - 180339
+    - Terrain_3_8-20241008 - 180339
+    - Terrain_3_9-20241008 - 180339
+    - Terrain_4_0-20241008 - 180339
+    - Terrain_4_1-20241008 - 180339
+    - Terrain_4_2-20241008 - 180339
+    - Terrain_4_3-20241008 - 180339
+    - Terrain_4_4-20241008 - 180339
+    - Terrain_4_5-20241008 - 180339
+    - Terrain_4_6-20241008 - 180339
+    - Terrain_4_7-20241008 - 180339
+    - Terrain_4_8-20241008 - 180339
+    - Terrain_4_9-20241008 - 180339
+    - Terrain_5_0-20241008 - 180339
+    - Terrain_5_1-20241008 - 180339
+    - Terrain_5_2-20241008 - 180339
+    - Terrain_5_3-20241008 - 180339
+    - Terrain_5_4-20241008 - 180339
+    - Terrain_5_5-20241008 - 180339
+    - Terrain_5_6-20241008 - 180339
+    - Terrain_5_7-20241008 - 180339
+    - Terrain_5_8-20241008 - 180339
+    - Terrain_5_9-20241008 - 180339
+    - Terrain_6_0-20241008 - 180339
+    - Terrain_6_1-20241008 - 180339
+    - Terrain_6_2-20241008 - 180339
+    - Terrain_6_3-20241008 - 180339
+    - Terrain_6_4-20241008 - 180339
+    - Terrain_6_5-20241008 - 180339
+    - Terrain_6_6-20241008 - 180339
+    - Terrain_6_7-20241008 - 180339
+    - Terrain_6_8-20241008 - 180339
+    - Terrain_6_9-20241008 - 180339
+    - Terrain_7_0-20241008 - 180339
+    - Terrain_7_1-20241008 - 180339
+    - Terrain_7_2-20241008 - 180339
+    - Terrain_7_3-20241008 - 180339
+    - Terrain_7_4-20241008 - 180339
+    - Terrain_7_5-20241008 - 180339
+    - Terrain_7_6-20241008 - 180339
+    - Terrain_7_7-20241008 - 180339
+    - Terrain_7_8-20241008 - 180339
+    - Terrain_7_9-20241008 - 180339
+    - Terrain_8_0-20241008 - 180339
+    - Terrain_8_1-20241008 - 180339
+    - Terrain_8_2-20241008 - 180339
+    - Terrain_8_3-20241008 - 180339
+    - Terrain_8_4-20241008 - 180339
+    - Terrain_8_5-20241008 - 180339
+    - Terrain_8_6-20241008 - 180339
+    - Terrain_8_7-20241008 - 180339
+    - Terrain_8_8-20241008 - 180339
+    - Terrain_8_9-20241008 - 180339
+    - Terrain_9_0-20241008 - 180339
+    - Terrain_9_1-20241008 - 180339
+    - Terrain_9_2-20241008 - 180339
+    - Terrain_9_3-20241008 - 180339
+    - Terrain_9_4-20241008 - 180339
+    - Terrain_9_5-20241008 - 180339
+    - Terrain_9_6-20241008 - 180339
+    - Terrain_9_7-20241008 - 180339
+    - Terrain_9_8-20241008 - 180339
+    - Terrain_9_9-20241008 - 180339
+    m_operationDateTime: 10/8/2024 6:07:59 PM
+    scriptableObjectAssetGUID: d4cb8c57792549b4183eda760dd55e56
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Gaia Pro Sample-Texture(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20241008 - 180339
+    - Terrain_0_1-20241008 - 180339
+    - Terrain_0_2-20241008 - 180339
+    - Terrain_0_3-20241008 - 180339
+    - Terrain_0_4-20241008 - 180339
+    - Terrain_0_5-20241008 - 180339
+    - Terrain_0_6-20241008 - 180339
+    - Terrain_0_7-20241008 - 180339
+    - Terrain_0_8-20241008 - 180339
+    - Terrain_0_9-20241008 - 180339
+    - Terrain_1_0-20241008 - 180339
+    - Terrain_1_1-20241008 - 180339
+    - Terrain_1_2-20241008 - 180339
+    - Terrain_1_3-20241008 - 180339
+    - Terrain_1_4-20241008 - 180339
+    - Terrain_1_5-20241008 - 180339
+    - Terrain_1_6-20241008 - 180339
+    - Terrain_1_7-20241008 - 180339
+    - Terrain_1_8-20241008 - 180339
+    - Terrain_1_9-20241008 - 180339
+    - Terrain_2_0-20241008 - 180339
+    - Terrain_2_1-20241008 - 180339
+    - Terrain_2_2-20241008 - 180339
+    - Terrain_2_3-20241008 - 180339
+    - Terrain_2_4-20241008 - 180339
+    - Terrain_2_5-20241008 - 180339
+    - Terrain_2_6-20241008 - 180339
+    - Terrain_2_7-20241008 - 180339
+    - Terrain_2_8-20241008 - 180339
+    - Terrain_2_9-20241008 - 180339
+    - Terrain_3_0-20241008 - 180339
+    - Terrain_3_1-20241008 - 180339
+    - Terrain_3_2-20241008 - 180339
+    - Terrain_3_3-20241008 - 180339
+    - Terrain_3_4-20241008 - 180339
+    - Terrain_3_5-20241008 - 180339
+    - Terrain_3_6-20241008 - 180339
+    - Terrain_3_7-20241008 - 180339
+    - Terrain_3_8-20241008 - 180339
+    - Terrain_3_9-20241008 - 180339
+    - Terrain_4_0-20241008 - 180339
+    - Terrain_4_1-20241008 - 180339
+    - Terrain_4_2-20241008 - 180339
+    - Terrain_4_3-20241008 - 180339
+    - Terrain_4_4-20241008 - 180339
+    - Terrain_4_5-20241008 - 180339
+    - Terrain_4_6-20241008 - 180339
+    - Terrain_4_7-20241008 - 180339
+    - Terrain_4_8-20241008 - 180339
+    - Terrain_4_9-20241008 - 180339
+    - Terrain_5_0-20241008 - 180339
+    - Terrain_5_1-20241008 - 180339
+    - Terrain_5_2-20241008 - 180339
+    - Terrain_5_3-20241008 - 180339
+    - Terrain_5_4-20241008 - 180339
+    - Terrain_5_5-20241008 - 180339
+    - Terrain_5_6-20241008 - 180339
+    - Terrain_5_7-20241008 - 180339
+    - Terrain_5_8-20241008 - 180339
+    - Terrain_5_9-20241008 - 180339
+    - Terrain_6_0-20241008 - 180339
+    - Terrain_6_1-20241008 - 180339
+    - Terrain_6_2-20241008 - 180339
+    - Terrain_6_3-20241008 - 180339
+    - Terrain_6_4-20241008 - 180339
+    - Terrain_6_5-20241008 - 180339
+    - Terrain_6_6-20241008 - 180339
+    - Terrain_6_7-20241008 - 180339
+    - Terrain_6_8-20241008 - 180339
+    - Terrain_6_9-20241008 - 180339
+    - Terrain_7_0-20241008 - 180339
+    - Terrain_7_1-20241008 - 180339
+    - Terrain_7_2-20241008 - 180339
+    - Terrain_7_3-20241008 - 180339
+    - Terrain_7_4-20241008 - 180339
+    - Terrain_7_5-20241008 - 180339
+    - Terrain_7_6-20241008 - 180339
+    - Terrain_7_7-20241008 - 180339
+    - Terrain_7_8-20241008 - 180339
+    - Terrain_7_9-20241008 - 180339
+    - Terrain_8_0-20241008 - 180339
+    - Terrain_8_1-20241008 - 180339
+    - Terrain_8_2-20241008 - 180339
+    - Terrain_8_3-20241008 - 180339
+    - Terrain_8_4-20241008 - 180339
+    - Terrain_8_5-20241008 - 180339
+    - Terrain_8_6-20241008 - 180339
+    - Terrain_8_7-20241008 - 180339
+    - Terrain_8_8-20241008 - 180339
+    - Terrain_8_9-20241008 - 180339
+    - Terrain_9_0-20241008 - 180339
+    - Terrain_9_1-20241008 - 180339
+    - Terrain_9_2-20241008 - 180339
+    - Terrain_9_3-20241008 - 180339
+    - Terrain_9_4-20241008 - 180339
+    - Terrain_9_5-20241008 - 180339
+    - Terrain_9_6-20241008 - 180339
+    - Terrain_9_7-20241008 - 180339
+    - Terrain_9_8-20241008 - 180339
+    - Terrain_9_9-20241008 - 180339
+    m_operationDateTime: 10/8/2024 6:08:09 PM
+    scriptableObjectAssetGUID: 2b624cbab5de5b24f999764c2809c20f
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  m_terrainMinMaxCache:
+  - guid: 73294ac83e9126d4aa9c219c2cebaef3
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 77.34493
+  - guid: a7bfb703956fc6241b1e1451ed1a5b1c
+    isWorldmap: 0
+    recalculate: 0
+    min: 7.54406
+    max: 95.28954
+  - guid: c2e0c2f2295d7104a8400cdc11a214a4
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.9775692
+    max: 75.95331
+  - guid: 0429c809a5f64ce49a33f185465c6a67
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.952163
+    max: 93.67819
+  - guid: 41ff5cdc2503f4d40a71e5b9a41766b5
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.80567634
+    max: 67.96979
+  - guid: 02314e17646151c4899e5a39acb0cb08
+    isWorldmap: 0
+    recalculate: 0
+    min: 6.958114
+    max: 80.86061
+  - guid: 1391e2acc23d0c644b5636ca95d59223
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.3916228
+    max: 232.76723
+  - guid: 3e3c58712db1941419aa5288c1eb177d
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.4648662
+    max: 29.44381
+  - guid: 1846bf57763826844ab611c8ef212809
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.21972992
+    max: 15.381094
+  - guid: 9ea11f0c069dd5a44b6dcd4e7e264f9e
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.87891966
+    max: 78.88304
+  - guid: e234e75fcc052a4429dd3d6ff7e77da4
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.43945983
+    max: 100.34332
+  - guid: 8a51d21b42a5e8e4395a44a7d40290c4
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.5127031
+    max: 83.350876
+  - guid: d00938878f49e7340b0a1919d3f7463b
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.6845961
+    max: 45.996796
+  - guid: 8b77791da8cad4f4fa489d860948ffdd
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.6113527
+    max: 75.22087
+  - guid: 59f39f3bd4d5b2641bcd04b5f32a676b
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 12.744335
+  - guid: aad9b0655fdb913448d5f9f3271c1ca7
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 31.42138
+  - guid: 200ec70629c4c6f4191215d5275938fa
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 44.97139
+  - guid: 532f2c2f8896f4b4da85a153b76fbd53
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 8.715953
+  - guid: 1041b172f1004b845bd43978f4b66f03
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.073243305
+    max: 12.011902
+  - guid: 95013d3e4b019584e9d02c06f000f6c1
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.21972992
+    max: 3.881895
+  - guid: 63b8c7b99e7953441857f7f621b752b3
+    isWorldmap: 0
+    recalculate: 0
+    min: 11.718929
+    max: 182.22935
+  - guid: 8e1952302a38b8448b7869a0ffbbda07
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.36621654
+    max: 24.390022
+  - guid: 04c84d6d8b2297e40a1c3d44d028ddb0
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 37.354084
+  - guid: e4c58b85ff2f9f3449d8a515b78ec36d
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 7.251087
+  - guid: f46dafcd0117ad240b0ec53baabe81b8
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 1.1718929
+  - guid: 4907968caa3391e439aee64e61f2fe28
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 0.43945983
+  - guid: 7c4984686a15807499e4ded2cd0e13be
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.073243305
+    max: 11.718929
+  - guid: 85a224713d13d45428cdeec0163e3d58
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 6.4454107
+  - guid: 1a884a4ef03bdb547bc60eb84795d19d
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 0.29297322
+  - guid: 82c7be55640410a4e8283a8027051747
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.21972992
+    max: 0.65918976
+  - guid: 6fea3bba5ada9fa4f8e1596b6c0db3ef
+    isWorldmap: 0
+    recalculate: 0
+    min: 7.1046004
+    max: 64.52735
+  - guid: fa4ccc53d41dcf94298bee7974b2f18e
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.29297322
+    max: 40.576794
+  - guid: 0f28940e7bfe79740b357d6818c203dd
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 61.231403
+  - guid: a7c80f2f9e2e0fa4a8b4145981e60792
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 42.847332
+  - guid: 4a1625f05aaeafa408e568d41828eea1
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.073243305
+    max: 0.36621654
+  - guid: daf8f9c4bc5f48c48beaad6f85719ea8
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 0.36621654
+  - guid: 629c592b3b10daf4aab3d319c33cb408
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 21.606775
+  - guid: 7bfe4d39b3113fb49be2990f394922d3
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 9.448386
+  - guid: e35f15c71fecb654f985192900e01606
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.21972992
+    max: 0.58594644
+  - guid: f37f9f847d19539488e990b6a64c240d
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.21972992
+    max: 1.7578393
+  - guid: 1cf556620aeb6364899dd9f4c801667f
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.7578393
+    max: 25.635157
+  - guid: 70c8507833526c046a29b8f4b581c0f7
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.3916228
+    max: 39.9176
+  - guid: e2ec2fd09260e13438bee399b15c4af5
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 3.2227054
+  - guid: 840c2f7faa34bf34184fb229f4a90f95
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 11.572442
+  - guid: 0dfab048d14373443b0b66ada3e10a88
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 0.14648661
+  - guid: 0a2da97f741fb75489394d3b2d37afb2
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 0.14648661
+  - guid: 03f8458245f945a4aa979c33ff3e888b
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.073243305
+    max: 1.6845961
+  - guid: e6b1e7773c39d5c4cad7d9b9bb99d391
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 3.2227054
+  - guid: 264bda518f7901f4ab9bd5bb36b79ccb
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.36621654
+    max: 1.7578393
+  - guid: 1620160bf4af8b84897f6d8feba22f56
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.36621654
+    max: 1.8310826
+  - guid: a433196a5e05c2e48ae28defbbb0ec89
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.2451361
+    max: 5.712978
+  - guid: 193ce27ade064a44e9ebe93d589a4d94
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.7324331
+    max: 9.668117
+  - guid: 41a0d696e02aab04088c560155521a70
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 3.2227054
+  - guid: 676e2660c314c6440acf062647a0deab
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.073243305
+    max: 0.29297322
+  - guid: 0fc9e897189823f4fb368ad6436dc4b7
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 0.14648661
+  - guid: 7454bbbd0b4a15448a400e487565a21c
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 0.87891966
+  - guid: b5f13173d08f6174e89e1be378adf340
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 5.712978
+  - guid: dc2ed14bf01c10545af02cf1ead020e2
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.21972992
+    max: 2.4902723
+  - guid: e7b88dd94c725064daee196da4230797
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.5127031
+    max: 2.1972992
+  - guid: be787ae248d163944893257d3731f8c8
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.43945983
+    max: 4.028382
+  - guid: 738f3c81e071aa0458884ebb01343fe3
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.4648662
+    max: 7.1046004
+  - guid: f1659394d24bd784f80658bf650261b5
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.65918976
+    max: 4.028382
+  - guid: bbed5d823ead61b49941b9ca964a782b
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 5.566491
+  - guid: 20963ce585f210244907d72a96a7c401
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 2.3437858
+  - guid: 02f475f86b7f5d6469c9df5b4ee1f034
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.14648661
+    max: 10.400549
+  - guid: 4503d9834138e274fb828df46fcd212e
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.7324331
+    max: 6.005951
+  - guid: aab4cac8a2ba3f949a387d4b88e1d256
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.0986496
+    max: 10.766766
+  - guid: 5408302c668773b4baaa94b1132b5fcb
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.2451361
+    max: 5.346761
+  - guid: fa7ede24b0897104885f5c9b9d4d0e4a
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.5127031
+    max: 5.566491
+  - guid: 98654ae44189ad447b2611e94feb4e67
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.43945983
+    max: 0.952163
+  - guid: b224fabd392bd064780e8ee67a3f8e82
+    isWorldmap: 0
+    recalculate: 0
+    min: 5.6397343
+    max: 21.387045
+  - guid: 754ffd5c116389341aae9c6f21c5dbd5
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.6845961
+    max: 11.059739
+  - guid: b7fa7d3f7b9b59740a9e84254e34711a
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.80567634
+    max: 5.273518
+  - guid: 5200ca21b00099946b7a811aaca9cbc5
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.21972992
+    max: 5.566491
+  - guid: acd7df502225dcb4e8262ec931334ca9
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.6113527
+    max: 48.99977
+  - guid: 206062269cf4aab439cf1869e37820b9
+    isWorldmap: 0
+    recalculate: 0
+    min: 6.958114
+    max: 98.36576
+  - guid: 7f85e087ac4a85044b2c8a964eee0c38
+    isWorldmap: 0
+    recalculate: 0
+    min: 2.636759
+    max: 134.91417
+  - guid: 7f1e2d864c44a654cb5908e5dfd0f577
+    isWorldmap: 0
+    recalculate: 0
+    min: 5.786221
+    max: 91.48089
+  - guid: 596c051ab50951b4d88eaef3e4ef2913
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.952163
+    max: 79.46899
+  - guid: d641d2a9ad3d92f449b5e523109c89cb
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.4648662
+    max: 79.54223
+  - guid: 599943cfdca3f094c884f8c98a5db114
+    isWorldmap: 0
+    recalculate: 0
+    min: 12.671092
+    max: 36.54841
+  - guid: 9b58e34644459dc4faf6bd654c29a0c7
+    isWorldmap: 0
+    recalculate: 0
+    min: 6.5918975
+    max: 30.615702
+  - guid: 19884ad5ff222e246bb892c58705c608
+    isWorldmap: 0
+    recalculate: 0
+    min: 2.636759
+    max: 28.931107
+  - guid: a587a53d5b64b1a48a65d2fbefc3209a
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 23.950562
+  - guid: d5288d751f7432c4aaad2c2d7dad20c1
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 24.902723
+  - guid: d5ef7c98384ff1c4cb0ae6be8f4569e2
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 10.547036
+  - guid: 2d0ad7847d502cc4dbc9c127a89f6429
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 92.57954
+  - guid: 7f073ac55ad928a429ea097a9afecfb5
+    isWorldmap: 0
+    recalculate: 0
+    min: 39.99085
+    max: 118.94713
+  - guid: 79c5bb7b5b946f54a9556ad73a6ef3bb
+    isWorldmap: 0
+    recalculate: 0
+    min: 11.425956
+    max: 66.06546
+  - guid: 3702eecfafdc8a94f907c8270fe5aa87
+    isWorldmap: 0
+    recalculate: 0
+    min: 4.321355
+    max: 80.12818
+  - guid: 263791c9f33810e46b0087f4781dd121
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 18.970016
+  - guid: f75cdfc3a94ce814cbcc9fe88954ec7e
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 11.645685
+  - guid: 647161c11d27abb459094573cd22d278
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 21.387045
+  - guid: 2d8e7ced5e8d4624d9f42f79d3828949
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 12.817578
+  - guid: 1f1bc49e9caf72a468a0f2787588384d
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 23.29137
+  - guid: f867b83373f11f84c80cc039c281790d
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 25.854887
+  - guid: 6a00bf639c3bea042bd3f312c05529f5
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 55.59167
+  - guid: 30e415f984e03304c905783b855810b5
+    isWorldmap: 0
+    recalculate: 0
+    min: 13.623255
+    max: 70.5333
+  - guid: b858fc7451a367e4698c202880c20c06
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 53.101395
+  - guid: 6c1bbc73d8157784c8e8a79955cefda9
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.58594644
+    max: 26.58732
+  m_bakedMaskCacheEntries: []
+  m_worldBiomeMaskSettings: {fileID: 0}
