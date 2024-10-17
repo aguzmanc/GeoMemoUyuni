@@ -115,7 +115,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4209022280269224150}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &2772583751989190247
 CapsuleCollider:
@@ -193,7 +193,7 @@ Transform:
   - {fileID: 2847605765827086368}
   - {fileID: 4567269148234718692}
   m_Father: {fileID: 4209022280269224150}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3369705141004618488
 GameObject:
@@ -278,37 +278,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &4348994488406239543
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3616798066835512307}
-  m_Layer: 0
-  m_Name: PointCamera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3616798066835512307
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4348994488406239543}
-  m_LocalRotation: {x: 0.11369952, y: -0, z: -0, w: 0.99351525}
-  m_LocalPosition: {x: 0, y: 2.86, z: -7.12}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4209022280269224150}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6900995122240967617
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,7 +473,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3616798066835512307}
   - {fileID: 2174458985441613858}
   - {fileID: 3939833220628780481}
   m_Father: {fileID: 0}
@@ -526,9 +494,9 @@ MonoBehaviour:
   _decelerationSpeed: 20
   _maxSpeed: 100
   _minSpeed: 30
-  _rollSpeed: 50
-  _pitchSpeed: 50
-  _yawSpeed: 30
+  _rollSpeed: 2500
+  _pitchSpeed: 2000
+  _yawSpeed: 1000
   _rotationSmoothFactor: 2
 --- !u!1 &9141945842075572902
 GameObject:

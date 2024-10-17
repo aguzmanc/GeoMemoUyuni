@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -1298,11 +1298,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 13.057, y: 0, z: 0}
---- !u!4 &1652118712 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3616798066835512307, guid: ca2323b3b4861c14386bc431bfcbb89a, type: 3}
-  m_PrefabInstance: {fileID: 2546010575417477550}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1905204226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,51 +1492,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2018252983
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2018252985}
-  - component: {fileID: 2018252984}
-  m_Layer: 0
-  m_Name: Test
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2018252984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018252983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb11dbf4136a7d749bae925faecafa08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxOutputValue: 10
---- !u!4 &2018252985
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018252983}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 418.52, y: 414.72464, z: 273.9035}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &297026487063982020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1679,8 +1629,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33df9baaded43eb44866491a5847a6eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 1652118712}
-  _offset: {x: 0, y: 0, z: 0}
+  _target: {fileID: 0}
+  _offset: {x: 0, y: 0, z: -8}
   _followSpeed: 5
   _rotationSpeed: 3
 --- !u!1001 &2546010575417477550
@@ -1690,18 +1640,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 965041806062192786, guid: ca2323b3b4861c14386bc431bfcbb89a, type: 3}
-      propertyPath: _yawSpeed
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 965041806062192786, guid: ca2323b3b4861c14386bc431bfcbb89a, type: 3}
-      propertyPath: _rollSpeed
-      value: 2500
-      objectReference: {fileID: 0}
-    - target: {fileID: 965041806062192786, guid: ca2323b3b4861c14386bc431bfcbb89a, type: 3}
-      propertyPath: _pitchSpeed
-      value: 2000
-      objectReference: {fileID: 0}
     - target: {fileID: 4209022280269224150, guid: ca2323b3b4861c14386bc431bfcbb89a, type: 3}
       propertyPath: m_RootOrder
       value: 2
