@@ -7,9 +7,9 @@
             "actions": [
                 {
                     "name": "Roll",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "777e39b8-6109-4a8a-9ca9-3c87ccb25ee0",
-                    "expectedControlType": "Axis",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -25,9 +25,9 @@
                 },
                 {
                     "name": "Pitch",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "ddb75c66-2934-4a7d-b1ae-66591929e05f",
-                    "expectedControlType": "Axis",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -40,6 +40,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "PitchMouse",
+                    "type": "Value",
+                    "id": "abc20514-1364-4bf9-85f6-e6e75c9bdd0c",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "RollMouse",
+                    "type": "Button",
+                    "id": "f19eac26-b29c-46fb-8140-e09778ff8a8e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -108,17 +126,6 @@
                     "action": "Roll",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "cb441b99-467d-4944-97f8-82ac4c311f9f",
-                    "path": "<Mouse>/delta/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Roll",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 },
                 {
                     "name": "Teclado",
@@ -364,12 +371,23 @@
                 },
                 {
                     "name": "",
+                    "id": "cb441b99-467d-4944-97f8-82ac4c311f9f",
+                    "path": "<Mouse>/delta/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RollMouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "f17f12d3-21b9-4157-8a54-7c432e62d522",
                     "path": "<Mouse>/delta/y",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Pitch",
+                    "action": "PitchMouse",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

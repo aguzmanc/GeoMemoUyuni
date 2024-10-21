@@ -24,6 +24,14 @@ public class UserInput
         }
     }
 
+    public static float PlaneRollMouse
+    {
+        get
+        {
+            return actions.Move.RollMouse.ReadValue<float>();
+        }
+    }
+
 
     public static float PlaneYaw
     {
@@ -38,6 +46,14 @@ public class UserInput
         get
         {
             return actions.Move.Pitch.ReadValue<float>();
+        }
+    }
+
+    public static float PlanePitchMouse
+    {
+        get
+        {
+            return actions.Move.PitchMouse.ReadValue<float>();
         }
     }
 

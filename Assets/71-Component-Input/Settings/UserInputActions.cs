@@ -29,9 +29,9 @@ public partial class @UserInputActions: IInputActionCollection2, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Roll"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""777e39b8-6109-4a8a-9ca9-3c87ccb25ee0"",
-                    ""expectedControlType"": ""Axis"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -47,9 +47,9 @@ public partial class @UserInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Pitch"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""ddb75c66-2934-4a7d-b1ae-66591929e05f"",
-                    ""expectedControlType"": ""Axis"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -62,6 +62,24 @@ public partial class @UserInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""PitchMouse"",
+                    ""type"": ""Value"",
+                    ""id"": ""abc20514-1364-4bf9-85f6-e6e75c9bdd0c"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""RollMouse"",
+                    ""type"": ""Button"",
+                    ""id"": ""f19eac26-b29c-46fb-8140-e09778ff8a8e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -130,17 +148,6 @@ public partial class @UserInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Roll"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""cb441b99-467d-4944-97f8-82ac4c311f9f"",
-                    ""path"": ""<Mouse>/delta/x"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Roll"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""Teclado"",
@@ -386,12 +393,23 @@ public partial class @UserInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""cb441b99-467d-4944-97f8-82ac4c311f9f"",
+                    ""path"": ""<Mouse>/delta/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RollMouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""f17f12d3-21b9-4157-8a54-7c432e62d522"",
                     ""path"": ""<Mouse>/delta/y"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Pitch"",
+                    ""action"": ""PitchMouse"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -406,6 +424,8 @@ public partial class @UserInputActions: IInputActionCollection2, IDisposable
         m_Move_Yaw = m_Move.FindAction("Yaw", throwIfNotFound: true);
         m_Move_Pitch = m_Move.FindAction("Pitch", throwIfNotFound: true);
         m_Move_Acceleration = m_Move.FindAction("Acceleration", throwIfNotFound: true);
+        m_Move_PitchMouse = m_Move.FindAction("PitchMouse", throwIfNotFound: true);
+        m_Move_RollMouse = m_Move.FindAction("RollMouse", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -471,6 +491,8 @@ public partial class @UserInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Move_Yaw;
     private readonly InputAction m_Move_Pitch;
     private readonly InputAction m_Move_Acceleration;
+    private readonly InputAction m_Move_PitchMouse;
+    private readonly InputAction m_Move_RollMouse;
     public struct MoveActions
     {
         private @UserInputActions m_Wrapper;
@@ -479,6 +501,8 @@ public partial class @UserInputActions: IInputActionCollection2, IDisposable
         public InputAction @Yaw => m_Wrapper.m_Move_Yaw;
         public InputAction @Pitch => m_Wrapper.m_Move_Pitch;
         public InputAction @Acceleration => m_Wrapper.m_Move_Acceleration;
+        public InputAction @PitchMouse => m_Wrapper.m_Move_PitchMouse;
+        public InputAction @RollMouse => m_Wrapper.m_Move_RollMouse;
         public InputActionMap Get() { return m_Wrapper.m_Move; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -500,6 +524,12 @@ public partial class @UserInputActions: IInputActionCollection2, IDisposable
             @Acceleration.started += instance.OnAcceleration;
             @Acceleration.performed += instance.OnAcceleration;
             @Acceleration.canceled += instance.OnAcceleration;
+            @PitchMouse.started += instance.OnPitchMouse;
+            @PitchMouse.performed += instance.OnPitchMouse;
+            @PitchMouse.canceled += instance.OnPitchMouse;
+            @RollMouse.started += instance.OnRollMouse;
+            @RollMouse.performed += instance.OnRollMouse;
+            @RollMouse.canceled += instance.OnRollMouse;
         }
 
         private void UnregisterCallbacks(IMoveActions instance)
@@ -516,6 +546,12 @@ public partial class @UserInputActions: IInputActionCollection2, IDisposable
             @Acceleration.started -= instance.OnAcceleration;
             @Acceleration.performed -= instance.OnAcceleration;
             @Acceleration.canceled -= instance.OnAcceleration;
+            @PitchMouse.started -= instance.OnPitchMouse;
+            @PitchMouse.performed -= instance.OnPitchMouse;
+            @PitchMouse.canceled -= instance.OnPitchMouse;
+            @RollMouse.started -= instance.OnRollMouse;
+            @RollMouse.performed -= instance.OnRollMouse;
+            @RollMouse.canceled -= instance.OnRollMouse;
         }
 
         public void RemoveCallbacks(IMoveActions instance)
@@ -539,5 +575,7 @@ public partial class @UserInputActions: IInputActionCollection2, IDisposable
         void OnYaw(InputAction.CallbackContext context);
         void OnPitch(InputAction.CallbackContext context);
         void OnAcceleration(InputAction.CallbackContext context);
+        void OnPitchMouse(InputAction.CallbackContext context);
+        void OnRollMouse(InputAction.CallbackContext context);
     }
 }

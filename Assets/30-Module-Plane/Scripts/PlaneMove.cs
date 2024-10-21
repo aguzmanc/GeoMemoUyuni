@@ -11,14 +11,26 @@ public class PlaneMove : MonoBehaviour
     [SerializeField] float _yawSpeed = 30f;
     [SerializeField] float _rotationSmoothFactor = 2f;
 
+    [SerializeField] bool _keyboardActived = true;
+    [SerializeField] bool _mouseActived = true;
+
     float _currentSpeed = 30f;
 
     void Update ()
     {
         Acceleration(UserInput.PlaneAcceleration);
+        var targetRotation = new Quaternion();
 
-        Quaternion targetRotation = transform.rotation *
-            Quaternion.Euler(MovePitch(UserInput.PlanePitch), MoveYaw(UserInput.PlaneYaw), MoveRoll(UserInput.PlaneRoll));
+        if (_keyboardActived) {
+            targetRotation = transform.rotation *
+                Quaternion.Euler(MovePitch(UserInput.PlanePitch), MoveYaw(UserInput.PlaneYaw), MoveRoll(UserInput.PlaneRoll));
+        }
+
+        if (_mouseActived)
+        {
+            targetRotation = transform.rotation *
+                Quaternion.Euler(MovePitch(UserInput.PlanePitchMouse), MoveYaw(UserInput.PlaneYaw), MoveRoll(UserInput.PlaneRollMouse));
+        }
 
         transform.rotation = Quaternion.Slerp(
             transform.rotation,
@@ -28,7 +40,7 @@ public class PlaneMove : MonoBehaviour
 
     private float MovePitch (float value)
     {
-        float pitch = 0f;
+        var pitch = 0f;
 
         if (value > 0)
         {
@@ -40,12 +52,11 @@ public class PlaneMove : MonoBehaviour
         }
 
         return pitch;
-
     }
 
     private float MoveYaw (float value)
     {
-        float yaw = 0f;
+        var yaw = 0f;
 
         if (value > 0)
         {
@@ -61,7 +72,7 @@ public class PlaneMove : MonoBehaviour
 
     private float MoveRoll (float value)
     {
-        float roll = 0f;
+        var roll = 0f;
 
         if (value > 0)
         {
