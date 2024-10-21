@@ -498,6 +498,8 @@ MonoBehaviour:
   _pitchSpeed: 2000
   _yawSpeed: 1000
   _rotationSmoothFactor: 2
+  _keyboardActived: 1
+  _mouseActived: 0
 --- !u!1 &9141945842075572902
 GameObject:
   m_ObjectHideFlags: 0
