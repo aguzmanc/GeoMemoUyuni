@@ -14,6 +14,7 @@ public class PlaneMove : MonoBehaviour
     [SerializeField] float _pitchSpeed = 50f;
     [SerializeField] float _yawSpeed = 30f;
     [SerializeField] float _rotationSmoothFactor = 2f;
+    [SerializeField] float _maximumHeight = 1000f;
 
     [SerializeField] bool _keyboardActived = true;
     [SerializeField] bool _mouseActived = true;
