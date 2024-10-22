@@ -15753,7 +15753,7 @@ MonoBehaviour:
   imageMasks:
   - m_active: 0
     m_invert: 0
-    m_hasErrors: 0
+    m_hasErrors: 1
     m_influence: 0
     m_operation: 9
     m_blendMode: 0
@@ -19156,7 +19156,7 @@ MonoBehaviour:
   imageMasks:
   - m_active: 0
     m_invert: 0
-    m_hasErrors: 0
+    m_hasErrors: 1
     m_influence: 0
     m_operation: 9
     m_blendMode: 0
@@ -22027,7 +22027,7 @@ MonoBehaviour:
   imageMasks:
   - m_active: 0
     m_invert: 0
-    m_hasErrors: 0
+    m_hasErrors: 1
     m_influence: 0
     m_operation: 9
     m_blendMode: 0
