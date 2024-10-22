@@ -28,6 +28,7 @@ public class TargetPathEditor : Editor
     {
         var targetPath = (TargetPath) target;
 
+
         DrawDefaultInspector();
 
         if (GUILayout.Button("ADD POINT"))

@@ -1,7 +1,11 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlaneMove : MonoBehaviour
 {
+    public static Action onBackScene;
+
     [SerializeField] float _accelerationSpeed = 30f;
     [SerializeField] float _decelerationSpeed = 20f;
     [SerializeField] float _maxSpeed = 100f;
@@ -14,11 +18,15 @@ public class PlaneMove : MonoBehaviour
     [SerializeField] bool _keyboardActived = true;
     [SerializeField] bool _mouseActived = true;
 
+    Vector3 _positionCollisionLimit;
     float _currentSpeed = 30f;
+    bool _noMove;
 
     void Update ()
     {
         Acceleration(UserInput.PlaneAcceleration);
+
+        if (_noMove) return;
         var targetRotation = new Quaternion();
 
         if (_keyboardActived) {
@@ -36,6 +44,13 @@ public class PlaneMove : MonoBehaviour
             transform.rotation,
             targetRotation,
             _rotationSmoothFactor * Time.deltaTime);
+    }
+
+    public void BackScene ()
+    {
+        if (_noMove) return;
+
+        StartCoroutine(BackSceneCoroutine());
     }
 
     private float MovePitch (float value)
@@ -99,5 +114,30 @@ public class PlaneMove : MonoBehaviour
 
         _currentSpeed = Mathf.Clamp(_currentSpeed, _minSpeed, _maxSpeed);
         transform.position += transform.forward * _currentSpeed * Time.deltaTime;
+    }
+
+    private void LookAtCenter ()
+    {
+        var directionToTarget = Vector3.zero - transform.position;
+        directionToTarget.y = 0;
+
+        if (directionToTarget.sqrMagnitude > 0.001f)
+        {
+            transform.rotation = Quaternion.LookRotation(directionToTarget);
+        }
+
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+    }
+
+    IEnumerator BackSceneCoroutine ()
+    {
+        _noMove = true;
+        onBackScene?.Invoke();
+        _positionCollisionLimit = transform.position;
+        yield return new WaitForSeconds(2.5f);
+        transform.position = _positionCollisionLimit;
+        LookAtCenter();
+        yield return new WaitForSeconds(1);
+        _noMove = false;
     }
 }
