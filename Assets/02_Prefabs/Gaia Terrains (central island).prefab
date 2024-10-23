@@ -51,7 +51,7 @@ Terrain:
   m_DetailObjectDistance: 190
   m_DetailObjectDensity: 0.5
   m_HeightmapPixelError: 5
-  m_SplatMapDistance: 2000
+  m_SplatMapDistance: 6000
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
@@ -142,7 +142,7 @@ Terrain:
   m_DetailObjectDistance: 190
   m_DetailObjectDensity: 0.5
   m_HeightmapPixelError: 5
-  m_SplatMapDistance: 2000
+  m_SplatMapDistance: 6000
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
@@ -233,7 +233,7 @@ Terrain:
   m_DetailObjectDistance: 190
   m_DetailObjectDensity: 0.5
   m_HeightmapPixelError: 5
-  m_SplatMapDistance: 2000
+  m_SplatMapDistance: 6000
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
@@ -359,7 +359,7 @@ Terrain:
   m_DetailObjectDistance: 190
   m_DetailObjectDensity: 0.5
   m_HeightmapPixelError: 5
-  m_SplatMapDistance: 2000
+  m_SplatMapDistance: 6000
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1

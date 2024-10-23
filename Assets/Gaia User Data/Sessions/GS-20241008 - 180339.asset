@@ -700,6 +700,48 @@ MonoBehaviour:
     sessionPlaybackState: 1
     m_terrainsFoldedOut: 0
     m_serializedExternalAction: 
+  - m_description: SetHeight - No Masks
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20241004 - 015523
+    - Terrain_0_1-20241004 - 015523
+    - Terrain_1_0-20241004 - 015523
+    - Terrain_1_1-20241004 - 015523
+    m_operationDateTime: 10/17/2024 7:07:10 PM
+    scriptableObjectAssetGUID: cb9017baacc1baa4ab43a09020ba617c
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Gaia Pro Sample-Texture(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20241004 - 015523
+    - Terrain_0_1-20241004 - 015523
+    - Terrain_1_0-20241004 - 015523
+    - Terrain_1_1-20241004 - 015523
+    m_operationDateTime: 10/17/2024 7:07:13 PM
+    scriptableObjectAssetGUID: a30d52bcd549cbf44bd24d9f7700284e
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Flatten - 4 Terrains
+    m_operationType: 1
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20241004 - 015523
+    - Terrain_0_1-20241004 - 015523
+    - Terrain_1_0-20241004 - 015523
+    - Terrain_1_1-20241004 - 015523
+    m_operationDateTime: 10/17/2024 7:07:23 PM
+    scriptableObjectAssetGUID: 15e4e3436e0d8a34886a73a6243e0602
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
   m_terrainMinMaxCache:
   - guid: 73294ac83e9126d4aa9c219c2cebaef3
     isWorldmap: 0
@@ -1201,5 +1243,150 @@ MonoBehaviour:
     recalculate: 0
     min: 0.58594644
     max: 26.58732
+  - guid: 50eb39daeddf396459cac8181d8962da
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.8125124
+    max: 93.18892
+  - guid: 5bcdf5c954677d740b302fa4542feab9
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.06250095
+    max: 32.875504
+  - guid: 94af4a448ca63f0418e558ddcbd17518
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 37.813076
+  - guid: c7c7793e08edcd0448de2c11d6b606f0
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 58.18839
+  - guid: 3d675bc2dcfb3a0468b9e3c120e5ea69
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 19.375296
+  - guid: ad1e24683e64b2c4f9876f59c64802bb
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 47.563225
+  - guid: 1f99df64f49f44547a1c87e83705deab
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 18.500282
+  - guid: ffb78da1c6ab3ef4f855c07f68586287
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 0.62500954
+  - guid: 71e1923f0badafa48bbdcb5bfa96b9c6
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 10.812665
+  - guid: 1390b6692793e764b8c3e8ce6743bbc2
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.1250019
+    max: 2.4375372
+  - guid: 8d38d2182fd4f5b44bf03b7071ec2a83
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.1250019
+    max: 8.875135
+  - guid: 1560133d0b4306246b8e90e561f62664
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 1.0000153
+  - guid: db8cd2fbce1630847800ab361f43f1e5
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 0.18750286
+  - guid: 5432f1927a68f674a9fbcdd95894e18e
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 5.9375906
+  - guid: abbddc376e336a847b029dd7583769b4
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.1250019
+    max: 1.5000229
+  - guid: 57b31846466dddf42aee80f8c739bef7
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.18750286
+    max: 2.3750362
+  - guid: c0ae63118a69cd042a068ad4eee1ef4e
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.06250095
+    max: 1.2500191
+  - guid: 655542c3e0d9180448f71f545776ebd9
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 2.750042
+  - guid: b2c461f02120dfc4a92ac8f841f19eff
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 6.5626
+  - guid: 7fd7dab0db042c644a75e7a58e96333d
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.5625086
+    max: 3.6875563
+  - guid: 4da672dba728f3c4ca8845ec48734d3d
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.6875105
+    max: 9.750149
+  - guid: f9c2296d69741fc43a67ab2f36a838cb
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.1250019
+    max: 8.687633
+  - guid: 6dbfd48be0262db4cb558dc7e620e993
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.9375143
+    max: 13.687709
+  - guid: 79876060399187246a1391fc9922efcb
+    isWorldmap: 0
+    recalculate: 0
+    min: 1.8750286
+    max: 104.8766
+  - guid: 0c96d221b2f680546a980f6296fe8252
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 211.44072
+  - guid: f8ea5fc122c804e489a1994ac6ed7953
+    isWorldmap: 0
+    recalculate: 1
+    min: 0
+    max: 54.859234
+  - guid: 8d50df33829375e46acd4864cde5ac1e
+    isWorldmap: 0
+    recalculate: 1
+    min: 0
+    max: 47.60815
+  - guid: 05b3a31abeb9a114a9ee4f3ddbdb4789
+    isWorldmap: 0
+    recalculate: 1
+    min: 0
+    max: 44.60517
+  - guid: 135dbde6906282241969985fdb5036d8
+    isWorldmap: 0
+    recalculate: 1
+    min: 0
+    max: 49.43923
   m_bakedMaskCacheEntries: []
   m_worldBiomeMaskSettings: {fileID: 0}
