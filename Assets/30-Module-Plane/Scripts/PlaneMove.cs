@@ -19,6 +19,8 @@ public class PlaneMove : MonoBehaviour
     [SerializeField] bool _keyboardActived = true;
     [SerializeField] bool _mouseActived = true;
 
+    [SerializeField] float _speedTest;
+
     Vector3 _positionCollisionLimit;
     float _currentSpeed = 30f;
     bool _noMove;
@@ -27,10 +29,13 @@ public class PlaneMove : MonoBehaviour
     {
         Acceleration(UserInput.PlaneAcceleration);
 
+        MaximumHeightControlRoll();
+
         if (_noMove) return;
         var targetRotation = new Quaternion();
 
-        if (_keyboardActived) {
+        if (_keyboardActived)
+        {
             targetRotation = transform.rotation *
                 Quaternion.Euler(MovePitch(UserInput.PlanePitch), MoveYaw(UserInput.PlaneYaw), MoveRoll(UserInput.PlaneRoll));
         }
@@ -54,23 +59,37 @@ public class PlaneMove : MonoBehaviour
         StartCoroutine(BackSceneCoroutine());
     }
 
-    private float MovePitch (float value)
+    float MovePitch (float value)
     {
         var pitch = 0f;
 
-        if (value > 0)
+        if (transform.position.y > _maximumHeight)
         {
-            pitch = (_pitchSpeed / 2) * Time.deltaTime;
+            if (value > 0)
+            {
+                pitch = (_pitchSpeed / 2) * Time.deltaTime;
+            }
+            else
+            {
+                MaximumHeightControlPitch();
+            }
         }
-        else if (value < 0)
+        else
         {
-            pitch = -_pitchSpeed * Time.deltaTime;
+            if (value > 0)
+            {
+                pitch = (_pitchSpeed / 2) * Time.deltaTime;
+            }
+            else if (value < 0)
+            {
+                pitch = -_pitchSpeed * Time.deltaTime;
+            }
         }
 
         return pitch;
     }
 
-    private float MoveYaw (float value)
+    float MoveYaw (float value)
     {
         var yaw = 0f;
 
@@ -86,23 +105,26 @@ public class PlaneMove : MonoBehaviour
         return yaw;
     }
 
-    private float MoveRoll (float value)
+    float MoveRoll (float value)
     {
         var roll = 0f;
 
-        if (value > 0)
+        if (transform.position.y < _maximumHeight)
         {
-            roll = _rollSpeed * Time.deltaTime;
-        }
-        else if (value < 0)
-        {
-            roll = -_rollSpeed * Time.deltaTime;
+            if (value > 0)
+            {
+                roll = _rollSpeed * Time.deltaTime;
+            }
+            else if (value < 0)
+            {
+                roll = -_rollSpeed * Time.deltaTime;
+            }
         }
 
         return roll;
     }
 
-    private void Acceleration (float value)
+    void Acceleration (float value)
     {
         if (value > 0)
         {
@@ -117,7 +139,7 @@ public class PlaneMove : MonoBehaviour
         transform.position += transform.forward * _currentSpeed * Time.deltaTime;
     }
 
-    private void LookAtCenter ()
+    void LookAtCenter ()
     {
         var directionToTarget = Vector3.zero - transform.position;
         directionToTarget.y = 0;
@@ -128,6 +150,27 @@ public class PlaneMove : MonoBehaviour
         }
 
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+    }
+
+    void MaximumHeightControlRoll ()
+    {
+        if (transform.position.y > _maximumHeight)
+        {
+            var currentRotationZ = transform.eulerAngles.z;
+            var desiredRotationZ = Mathf.LerpAngle(currentRotationZ, 0, Time.deltaTime * _speedTest);
+
+            var eulerAngle = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, desiredRotationZ);
+            transform.rotation = Quaternion.Euler(eulerAngle);
+        }
+    }
+
+    void MaximumHeightControlPitch ()
+    {
+        var currentRotationX = transform.eulerAngles.x;
+        var desiredRotationX = Mathf.LerpAngle(currentRotationX, 0, Time.deltaTime * _speedTest);
+
+        var eulerAngle = new Vector3(desiredRotationX, transform.eulerAngles.y, transform.eulerAngles.z);
+        transform.rotation = Quaternion.Euler(eulerAngle);
     }
 
     IEnumerator BackSceneCoroutine ()

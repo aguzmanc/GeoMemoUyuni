@@ -2170,6 +2170,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 965041806062192786, guid: ca2323b3b4861c14386bc431bfcbb89a, type: 3}
+      propertyPath: _speedTest
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 965041806062192786, guid: ca2323b3b4861c14386bc431bfcbb89a, type: 3}
+      propertyPath: _maximumHeight
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 965041806062192786, guid: ca2323b3b4861c14386bc431bfcbb89a, type: 3}
       propertyPath: _keyboardActived
       value: 1
       objectReference: {fileID: 0}
@@ -2183,7 +2191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4209022280269224150, guid: ca2323b3b4861c14386bc431bfcbb89a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 64.9
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4209022280269224150, guid: ca2323b3b4861c14386bc431bfcbb89a, type: 3}
       propertyPath: m_LocalPosition.z
