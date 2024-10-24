@@ -2181,6 +2181,10 @@ PrefabInstance:
       propertyPath: _keyboardActived
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2772583751989190247, guid: ca2323b3b4861c14386bc431bfcbb89a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4209022280269224150, guid: ca2323b3b4861c14386bc431bfcbb89a, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -43,7 +43,7 @@ public class PlaneMove : MonoBehaviour
         if (_mouseActived)
         {
             targetRotation = transform.rotation *
-                Quaternion.Euler(MovePitch(UserInput.PlanePitchMouse), MoveYaw(UserInput.PlaneYaw), MoveRoll(UserInput.PlaneRollMouse));
+                Quaternion.Euler(MovePitchMouse(UserInput.PlanePitchMouse), MoveYaw(UserInput.PlaneYaw), MoveRollMouse(UserInput.PlaneRollMouse));
         }
 
         transform.rotation = Quaternion.Slerp(
@@ -67,6 +67,36 @@ public class PlaneMove : MonoBehaviour
         {
             if (value > 0)
             {
+                pitch = (_pitchSpeed / 2) * Time.deltaTime * value;
+            }
+            else
+            {
+                MaximumHeightControlPitch();
+            }
+        }
+        else
+        {
+            if (value > 0)
+            {
+                pitch = (_pitchSpeed / 2) * Time.deltaTime * value;
+            }
+            else if (value < 0)
+            {
+                pitch = _pitchSpeed * Time.deltaTime * value;
+            }
+        }
+
+        return pitch;
+    }
+
+    float MovePitchMouse (float value)
+    {
+        var pitch = 0f;
+
+        if (transform.position.y > _maximumHeight)
+        {
+            if (value > 0)
+            {
                 pitch = (_pitchSpeed / 2) * Time.deltaTime;
             }
             else
@@ -82,7 +112,7 @@ public class PlaneMove : MonoBehaviour
             }
             else if (value < 0)
             {
-                pitch = -_pitchSpeed * Time.deltaTime;
+                pitch = _pitchSpeed * Time.deltaTime;
             }
         }
 
@@ -95,11 +125,11 @@ public class PlaneMove : MonoBehaviour
 
         if (value > 0)
         {
-            yaw = -_yawSpeed * Time.deltaTime;
+            yaw = _yawSpeed * Time.deltaTime * value;
         }
         else if (value < 0)
         {
-            yaw = _yawSpeed * Time.deltaTime;
+            yaw = _yawSpeed * Time.deltaTime * value;
         }
 
         return yaw;
@@ -113,11 +143,30 @@ public class PlaneMove : MonoBehaviour
         {
             if (value > 0)
             {
-                roll = _rollSpeed * Time.deltaTime;
+                roll = (_rollSpeed * Time.deltaTime * value);
             }
             else if (value < 0)
             {
-                roll = -_rollSpeed * Time.deltaTime;
+                roll = (_rollSpeed * Time.deltaTime * value);
+            }
+        }
+
+        return roll;
+    }
+
+    float MoveRollMouse (float value)
+    {
+        var roll = 0f;
+
+        if (transform.position.y < _maximumHeight)
+        {
+            if (value > 0)
+            {
+                roll = (_rollSpeed * Time.deltaTime);
+            }
+            else if (value < 0)
+            {
+                roll = (_rollSpeed * Time.deltaTime);
             }
         }
 

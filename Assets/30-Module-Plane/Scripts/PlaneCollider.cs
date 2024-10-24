@@ -11,15 +11,15 @@ public class PlaneCollider : MonoBehaviour
 
     private void OnTriggerEnter (Collider other)
     {
+        if (other.tag == "Target") return;
+
         if (other.tag == "Limit")
         {
             _planeMove.BackScene();
         }
-    }
-
-    private void OnCollisionEnter (Collision collision)
-    {
-        Debug.Log("Colisioando");
-        _planeMove.GetComponent<PlaneLife>().Dead();
+        else
+        {
+            _planeMove.GetComponent<PlaneLife>().Dead();
+        }
     }
 }

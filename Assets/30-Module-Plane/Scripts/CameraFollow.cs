@@ -28,7 +28,7 @@ public class CameraFollow : MonoBehaviour
 
     void LateUpdate ()
     {
-        if (_noMove) return;
+        if (_noMove || _target == null) return;
 
         var desiredPosition = _target.position + _target.rotation * _offset;
 

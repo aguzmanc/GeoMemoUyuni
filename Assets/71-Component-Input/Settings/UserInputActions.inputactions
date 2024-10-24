@@ -7,27 +7,27 @@
             "actions": [
                 {
                     "name": "Roll",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "777e39b8-6109-4a8a-9ca9-3c87ccb25ee0",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
                     "name": "Yaw",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "eb07efa3-590c-4514-9895-86fbd2b51eba",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Pitch",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "ddb75c66-2934-4a7d-b1ae-66591929e05f",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -139,7 +139,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "positive",
+                    "name": "negative",
                     "id": "104aede5-9619-4a64-a4ae-c1a0fd81594f",
                     "path": "<Keyboard>/q",
                     "interactions": "",
@@ -150,7 +150,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "negative",
+                    "name": "positive",
                     "id": "172f50a0-e539-4042-953a-ccad68041bbc",
                     "path": "<Keyboard>/e",
                     "interactions": "",
@@ -172,20 +172,9 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
-                    "id": "4e6806b6-be4a-4055-81da-0d426b8ca8bd",
-                    "path": "<Gamepad>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Yaw",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "positive",
-                    "id": "3cb93200-85a9-4ed9-bd54-d2919726bbac",
-                    "path": "<Gamepad>/leftShoulder",
+                    "id": "4e6806b6-be4a-4055-81da-0d426b8ca8bd",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -194,7 +183,18 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "1D Axis",
+                    "name": "negative",
+                    "id": "3cb93200-85a9-4ed9-bd54-d2919726bbac",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Yaw",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Mouse",
                     "id": "bdc91ef8-74c3-4c60-91c2-982165a3c153",
                     "path": "1DAxis",
                     "interactions": "",
@@ -205,7 +205,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "positive",
+                    "name": "negative",
                     "id": "fe3b101d-bb05-4c28-99b7-6f027ae10f92",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -216,7 +216,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "negative",
+                    "name": "positive",
                     "id": "42c482da-51b2-4e6f-88ab-25a69ba5317a",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
@@ -337,9 +337,9 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
+                    "name": "positive",
                     "id": "836e0a07-67d2-4083-ae49-3f99df6b6890",
-                    "path": "<Gamepad>/rightStick/down",
+                    "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -348,9 +348,9 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
+                    "name": "negative",
                     "id": "166a5089-1d74-41b3-a77d-f55594139285",
-                    "path": "<Gamepad>/rightStick/up",
+                    "path": "<Gamepad>/leftShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
