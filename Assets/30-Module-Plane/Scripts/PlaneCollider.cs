@@ -16,4 +16,10 @@ public class PlaneCollider : MonoBehaviour
             _planeMove.BackScene();
         }
     }
+
+    private void OnCollisionEnter (Collision collision)
+    {
+        Debug.Log("Colisioando");
+        _planeMove.GetComponent<PlaneLife>().Dead();
+    }
 }

@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlaneLife : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameObject _explosion;
 
-    // Update is called once per frame
-    void Update()
+    public void Dead ()
     {
-        
+        Instantiate(_explosion, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 }
